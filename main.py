@@ -5,6 +5,8 @@
 
 
 import machine
+import time
+from machine import I2C
 
 
 def DataFromMaster():
