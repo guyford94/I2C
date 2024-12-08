@@ -1,4 +1,10 @@
-from pyb import *
+
+## Example Code for Pyboard Slave
+
+#Here’s an example of how you could implement this protocol on the Pyboard (slave) side using MicroPython:
+
+
+import machine
 
 
 def DataFromMaster():
@@ -17,7 +23,7 @@ def checksum(msg):
     return v
 
 
-
+# Set up I2C
 i2c = I2C(1)  # create Slave on bus 2 : Pyboard lite there are 1 for Bus X and 3 for Bus Y
     i2c.init(i2c.SLAVE, addr=0x48)  # init as a peripheral with given address
     Cheksum = 0
