@@ -5,7 +5,7 @@ The slave receives a message from the master in the form of 3 characters.
 And according to the letters it receives, it responds to the master
 In addition, information can be sent as digits to update certain predetermined values ​​separated by "*"
 
-Table of use of the protocol
+**Table of use of the protocol**
 master 		message	Explanation of the message	              	slave massge
 RTT		    start connection whit master			                  RTR
 INI		    Check of equipment			                          	OK_
